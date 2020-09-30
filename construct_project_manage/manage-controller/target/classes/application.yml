@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/stus?characterEncoding=utf-8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource # 自定义数据源
+
+#整合mabatis
+mybatis:
+  type-aliases-package: com.baidu.pojo  #别名扫描
+  mapper-locations: classpath:mybatis/mapper/*.xml  #扫描xml文件
+
+mybatis-plus:
+  type-aliases-package: com.baidu.pojo
