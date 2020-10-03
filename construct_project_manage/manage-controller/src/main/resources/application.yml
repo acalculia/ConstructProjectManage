@@ -17,3 +17,5 @@ mybatis-plus:
 #关闭模板引擎  不然没法看到实时页面
   thymeleaf:
     cache: false
+    suffix: .html
+    prefix: classpath:/templates/
